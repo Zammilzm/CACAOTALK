@@ -139,7 +139,6 @@
                                 <input type="text" id="status" name='status' class="form-control" >
                             </div>
                             <button type="submit" class="btn btn-primary">Simpan</button>
-                            <button type="submit" class="btn btn-warning">Cancel</button>
                         </form>
                     </div>
                 </div>

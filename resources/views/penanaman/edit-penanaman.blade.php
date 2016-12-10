@@ -154,7 +154,6 @@
                                 <input type="text" class="form-control" value="{{$tanam->luas_lahan}}" name='luas_lahan'>
                             </div>
                             <button type="submit" class="btn btn-primary">Simpan</button>
-                            <button type="submit" class="btn btn-warning">Cancel</button>
                         </form>
                     </div>
                 </div>
