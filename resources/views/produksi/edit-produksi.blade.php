@@ -170,7 +170,6 @@
                                 <option {{($produksi->tipe_granding == 'Logam')?'selected':''}}>Logam</option>
                             </select>
                             <button type="submit" class="btn btn-primary">Simpan</button>
-                            <button type="submit" class="btn btn-warning">Cancel</button>
                         </form>
                     </div>
                 </div>

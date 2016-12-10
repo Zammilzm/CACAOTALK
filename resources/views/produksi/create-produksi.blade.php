@@ -166,7 +166,6 @@
                                 <option>Logam</option>
                             </select>
                             <button type="submit" class="btn btn-primary">Simpan</button>
-                            <button type="submit" class="btn btn-warning">Cancel</button>
                         </div>
                     </form>
                 </div>

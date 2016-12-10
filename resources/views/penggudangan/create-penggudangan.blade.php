@@ -162,7 +162,6 @@
                                 <input type="text" class="form-control" id="panen_simpan" name='panen_disimpan'>
                             </div>
                             <button type="submit" class="btn btn-primary">Simpan</button>
-                            <button type="submit" class="btn btn-warning">Cancel</button>
                         </form>
                     </div>
                 </div>
