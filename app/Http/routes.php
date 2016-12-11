@@ -15,8 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('home', function () {
-    return view('buahKakao.index');
+Route::get('awal', function () {
+    return view('index');
 });
 
 Route::get('buah/create', 'KakaoController@create');

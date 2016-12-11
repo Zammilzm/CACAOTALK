@@ -78,7 +78,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="/home">
+						<a href="/awal">
 							Log out
 						</a>
 					</li>

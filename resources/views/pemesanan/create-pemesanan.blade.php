@@ -91,7 +91,7 @@
                 <div class="col-md-8">
                     <div class="card">
                         <div class="header">
-                           <h1 class="judul-form" style="color:black;">
+                         <h1 class="judul-form" style="color:black;">
                             TAMBAH PEMESANAN
                         </h1>
                     </div>
@@ -128,17 +128,18 @@
 
                             <div class="form-group">
                                 <label for="nama">Bubuk Coklat Dipesan:</label>
-                                <input type="text" id="bubuk_coklat_dipesan" name='bubuk_coklat_dipesan' class="form-control" >
+                                <input type="text" id="bubuk_coklat_dipesan" name='bubuk_coklat_dipesan' class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="nama">Permen Coklat Dipesan:</label>
-                                <input type="text" id="permen_coklat_dipesan" name='permen_coklat_dipesan' class="form-control" >
+                                <input type="text" id="permen_coklat_dipesan" name='permen_coklat_dipesan' class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="nama">Status:</label>
-                                <input type="text" id="status" name='status' class="form-control" >
+                                <input type="text" id="status" name='status' class="form-control">
                             </div>
                             <button type="submit" class="btn btn-primary">Simpan</button>
+                            <button type="submit" class="btn btn-warning">Cancel</button>
                         </form>
                     </div>
                 </div>
@@ -150,7 +151,7 @@
                     </div>
                     <div class="content">
                         <div class="author">
-                           <a href="#">
+                         <a href="#">
                             <img class="avatar border-gray" src="/assets/img/cacao-1.jpg" alt="..."/>
 
                             <h4 class="title">KAKAO<br />
