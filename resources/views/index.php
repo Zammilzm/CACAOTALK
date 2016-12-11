@@ -56,7 +56,7 @@
 				<ul class="nav navbar-nav navbar-right main-nav">
 					<li><a href="#intro">Home</a></li>
 					<li><a href="/informasibuah">Info Kakao</a></li>
-					<li><a href="/pemesanan">Pemesanan</a></li>
+					<li><a href="/pemesanan/create">Pemesanan</a></li>
 					<li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">LOG IN</a></li>
 				</ul>
 			</div>
@@ -79,6 +79,19 @@
 			</div>
 		</div>
 	</header>
+	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content modal-popup">
+				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
+				<h3 class="white">ADMIN LOGIN</h3>
+				<form action="" class="popup-form">
+					<input type="text" class="form-control form-white" placeholder="Full Name">
+					<input type="password" class="form-control form-white" placeholder="PASSWORD">
+					<button type="submit" class="btn btn-submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
 	<script src="/home/js/jquery-1.11.1.min.js"></script>
 	<script src="/home/js/owl.carousel.min.js"></script>
 	<script src="/home/js/bootstrap.min.js"></script>
