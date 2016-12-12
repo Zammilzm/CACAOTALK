@@ -106,11 +106,6 @@ class TanamController extends Controller
     	$tanam->delete();
     	return redirect("tabel");
     }
-    public function edit($id)
-    {
-    	$tanam = Tanam::find($id);
-    	return view('penanaman.edit-penanaman',compact('tanam'));
-    }
 
     public function update(Request $request,$id)
     {
