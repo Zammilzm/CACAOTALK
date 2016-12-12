@@ -14,7 +14,8 @@ class PemesananController extends Controller
     {
         $pemesanan = Pemesanan::all();
         $hasilolahan =Hasilolahan::all();
-        return view('pemesanan.create-pemesanan',compact("pemesanan","hasilolahan"));
+        $olahan = Hasilolahan::olahan()->get();
+        return view('pemesanan.create-pemesanan',compact("pemesanan","hasilolahan","olahan"));
 
     }
 
@@ -33,16 +34,7 @@ class PemesananController extends Controller
 
     public function store(Request $request)//buat cretae klik simpan
     {
-
         Pemesanan::create($request->all());
-        $hasilolahan = Hasilolahan::find($request->id_hasil_produksi);
-        if ($request->bubuk_coklat_dipesan != '') {
-            $hasilolahan->jumlah_bubuk_cokelat -= $request->bubuk_coklat_dipesan;
-        }
-        if ($request->permen_coklat_dipesan != '') {
-            $hasilolahan->jumlah_permen_cokelat -= $request->permen_coklat_dipesan;
-        }
-        $hasilolahan->update();
         return redirect('/pemesanan/create');
     }
 

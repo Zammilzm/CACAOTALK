@@ -91,7 +91,7 @@
                 <div class="col-md-8">
                     <div class="card">
                         <div class="header">
-                         <h1 class="judul-form" style="color:black;">
+                           <h1 class="judul-form" style="color:black;">
                             TAMBAH PEMESANAN
                         </h1>
                     </div>
@@ -126,17 +126,17 @@
                                 </label>            
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group" id="bubuk_form">
                                 <label for="nama">Bubuk Coklat Dipesan:</label>
-                                <input type="text" id="bubuk_coklat_dipesan" name='bubuk_coklat_dipesan' class="form-control">
+                                <input type="text" id="bubuk_coklat_dipesan" name='bubuk_coklat_dipesan' class="form-control" >
                             </div>
-                            <div class="form-group">
+                            <div class="form-group" id="permen_form">
                                 <label for="nama">Permen Coklat Dipesan:</label>
-                                <input type="text" id="permen_coklat_dipesan" name='permen_coklat_dipesan' class="form-control">
+                                <input type="text" id="permen_coklat_dipesan" name='permen_coklat_dipesan' class="form-control" >
                             </div>
                             <div class="form-group">
                                 <label for="nama">Status:</label>
-                                <input type="text" id="status" name='status' class="form-control">
+                                <input type="text" id="status" name='status' class="form-control" >
                             </div>
                             <button type="submit" class="btn btn-primary">Simpan</button>
                             <button type="submit" class="btn btn-warning">Cancel</button>
@@ -151,7 +151,7 @@
                     </div>
                     <div class="content">
                         <div class="author">
-                         <a href="#">
+                           <a href="#">
                             <img class="avatar border-gray" src="/assets/img/cacao-1.jpg" alt="..."/>
 
                             <h4 class="title">KAKAO<br />
@@ -162,16 +162,15 @@
                         <a href="/pemesanan" class="btn btn-primary" >STOK COKLAT DAN BUBUK</a>
 
                         <thead>
-                            <th>ID STOK</th>
                             <th>JUMLAH PERMEN</th>
                             <th>JUMLAH BUBUK</th>
                         </thead>
                         <tbody>
                             <tr>
-                                @foreach($hasilolahan as $hasilolahan)
-                                <td>{{$hasilolahan->id_hasil_produksi}}</td>
-                                <td>{{$hasilolahan->jumlah_permen_cokelat}}</td>
-                                <td>{{$hasilolahan->jumlah_bubuk_cokelat}}</td>
+                                @php($no=1)
+                                @foreach($olahan as $olahan)
+                                <td>{{$olahan->jumlahPermen}}</td>
+                                <td>{{$olahan->jumlahBubuk}}</td>
                             </tr>
                             @endforeach
                         </tbody>
@@ -182,6 +181,28 @@
         </div>
     </div>
 </div>
+
+<script src="/assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!--  Checkbox, Radio & Switch Plugins -->
+<script src="/assets/js/bootstrap-checkbox-radio-switch.js"></script>
+
+<!--  Charts Plugin -->
+<script src="/assets/js/chartist.min.js"></script>
+
+<!--  Notifications Plugin    -->
+<script src="/assets/js/bootstrap-notify.js"></script>
+
+<!--  Google Maps Plugin    -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+<script src="/assets/js/light-bootstrap-dashboard.js"></script>
+
+<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+<script src="/assets/js/demo.js"></script>
+
 <script type="text/javascript">
     function htmlbodyHeightUpdate(){
         var height3 = $( window ).height()
@@ -209,26 +230,33 @@
         });
     });
 </script>
-<script src="/assets/js/jquery-1.10.2.js" type="text/javascript"></script>
-<script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
 
-<!--  Checkbox, Radio & Switch Plugins -->
-<script src="/assets/js/bootstrap-checkbox-radio-switch.js"></script>
+<script>
+    /*if (checkbox==false) {
+              $("#bubuk_coklat_dipesan :input").prop('readonly', true); 
+            }else{
+              $("#permen_coklat_dipesan :input").prop('readonly', true);
+            }*/
+    $( "input:checkbox" ).click(function(){
+        if ($('#bubuk').is(':checked')) {
+            $('#bubuk_coklat_dipesan').attr('readonly',false);
+            $('#bubuk_form').show();
+        }else{
+            $('#bubuk_coklat_dipesan').val('0');
+            $('#bubuk_coklat_dipesan').attr('readonly',true);
+            $('#bubuk_form').hide();
+        }
+        if ($('#permen').is(':checked')) {
+            $('#permen_coklat_dipesan').attr('readonly',false);
+            $('#permen_form').show();
+        }else{
+            $('#permen_coklat_dipesan').val('0');
+            $('#permen_coklat_dipesan').attr('readonly',true);
+            $('#permen_form').hide()
+        }
+    });
 
-<!--  Charts Plugin -->
-<script src="/assets/js/chartist.min.js"></script>
-
-<!--  Notifications Plugin    -->
-<script src="/assets/js/bootstrap-notify.js"></script>
-
-<!--  Google Maps Plugin    -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
-<!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
-<script src="/assets/js/light-bootstrap-dashboard.js"></script>
-
-<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
-<script src="/assets/js/demo.js"></script>
+</script>
 
 </body>
 </html>

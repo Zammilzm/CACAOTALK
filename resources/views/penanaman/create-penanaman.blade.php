@@ -150,7 +150,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="email">Pohon Dalam Penyerbukan:</label>
+                            <label for="email">Pohon Dalam Penyerbukan (per:</label>
                             <input type="text" class="form-control" name='jumlah_bibit'><tt><p>(jumlah dalam satuan biji)</p>
                         </div>
                         <div class="form-group">
