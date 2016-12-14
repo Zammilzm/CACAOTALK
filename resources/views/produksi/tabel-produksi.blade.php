@@ -132,8 +132,6 @@
 									<th width="20">id</th>
 									<th>id_stok</th>
 									<th>jumlah_produksi</th>
-									<th>metode_sortir</th>
-									<th>tipe_granding</th>
 <!-- 									<th>AKSI</th> -->
 								</thead>
 								<tbody>
@@ -142,10 +140,7 @@
 										<td>{{$produksi->id_produksi}}</td>
 										<td>{{$produksi->id_stok}}</td>
 										<td>{{$produksi->jumlah_produksi}}</td>
-										<td>{{$produksi->metode_sortir}}</td>
-										<td>{{$produksi->tipe_granding}}</td>
-										<!-- <td>
-											<a href="/produksi/{{$produksi->id_produksi}}/edit" class="btn btn-info">
+										<td><a href="/produksi/{{$produksi->id_produksi}}/edit" class="btn btn-info">
 												<i class="pe-7s-pen">
 												</i>
 											</a>
@@ -153,7 +148,7 @@
 												<i class="pe-7s-trash">
 												</i>
 											</a>
-										</td> -->
+										</td>
 									</tr>
 									@endforeach
 								</tbody>

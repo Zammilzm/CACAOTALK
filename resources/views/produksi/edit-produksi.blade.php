@@ -146,30 +146,20 @@
                         </div>
                         <div class="form-group">
                             <label for="jk">Nama Buah:</label>
-                            <input type="text" name='nama_buah' class="form-control" value="{{$kakaos->nama_buah}}">
+                            <input type="text" name='nama_buah' class="form-control" value="{{$kakaos->nama_buah}}" required>
                         </div>
                         <div class="form-group">
                             <label for="nama">Jenis Kakao:</label>
-                            <input type="text" name='jenis_kakao' class="form-control" value="{{$kakaos->jenis_kakao}}">
+                            <input type="text" name='jenis_kakao' class="form-control" value="{{$kakaos->jenis_kakao}}" required>
                         </div>
                         <div class="form-group">
                             <label for="nama">Jumlah Produksi:</label>
-                            <input type="text" name='jumlah_produksi' class="form-control" value="{{$produksi->jumlah_produksi}}">
-                        </div>
-                        <div class="form-group">
-                            <label for="jk">Metode Sortir:</label>
-                            <select name='metode_sortir' class="form-control" id="jk">
-                                <option {{($produksi->metode_sortir == 'Konvensioal')?'selected':''}}>Konvensional</option>
-                                <option {{($produksi->metode_sortir == 'Modern')?'selected':''}}>Modern</option>
-                            </select>
+                            <input type="text" name='jumlah_produksi' class="form-control" value="``{{$produksi->jumlah_produksi}}" required>
                         </div>
                         <div class="form-group" >
-                            <label for="nama">Tipe Granding:</label>
-                            <select name='tipe_granding' class="form-control" id="wb">
-                                <option {{($produksi->tipe_granding == 'Batu')?'selected':''}}>Batu</option>
-                                <option {{($produksi->tipe_granding == 'Logam')?'selected':''}}>Logam</option>
-                            </select>
                             <button type="submit" class="btn btn-primary">Simpan</button>
+                            <button type="submit" class="btn btn-warning">Cancel</button>
+                            </div>
                         </form>
                     </div>
                 </div>

@@ -21,39 +21,41 @@ class KakaoController extends Controller
 		return view('buahKakao.tabel-kakao');
 	}
 
-	public function store(Request $request)//buat cretae
+	public function store(Request $request)//ketika klik simpan
 	{
 		Kakao::create($request->all());
 		return redirect('tabel');
 	}
-	public function index()//
+	public function index()//menampilkan di tabel
     {
     	$buah = Kakao::all();
     	return view('buahKakao.tabel-kakao',compact('buah'));
     }
-    public function destroy($id)
+    public function destroy($id)//klik delete
     {
     	$buah = Kakao::find($id);
     	$buah->delete();
     	return redirect("tabel");
     }
-    public function edit($id)
+    public function edit($id)// ketika klik edit
     {
     	$buah = Kakao::find($id);
     	return view('buahKakao.edit-kakao',compact('buah'));
     }
 
-    public function show($id)
-    {
-        $buah = Kakao::with('penanaman')->find($id);
-        return $buah;
-    }
-
-    public function update(Request $request,$id)
+    public function update(Request $request,$id)//ketika klik simpan edit/update
     {
     	$buah = Kakao::find($id);
     	$buah->update($request->all());
     	return redirect('tabel');
     }
+
+    
+    public function show($id)// ajax nya produksi
+    {
+        $buah = Kakao::with('penanaman')->find($id);
+        return $buah;
+    }
+
     
 }

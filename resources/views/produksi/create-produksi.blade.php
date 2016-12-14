@@ -142,30 +142,19 @@
                         </div>
                         <div class="form-group">
                             <label for="jk">Nama Buah:</label>
-                            <input type="text" id="nama_buah" name='nama_buah' class="form-control">
+                            <input type="text" id="nama_buah" name='nama_buah' class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="nama">Jenis Kakao:</label>
-                            <input type="text" id="jenis_kakao" name='jenis_kakao' class="form-control">
+                            <input type="text" id="jenis_kakao" name='jenis_kakao' class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="nama">Jumlah Produksi:</label>
-                            <input type="text" id="jumlah_produksi" name='jumlah_produksi' class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="jk">Metode Sortir:</label>
-                            <select name='metode_sortir' class="form-control" id="jk">
-                                <option>Konvensional</option>
-                                <option>Modern</option>
-                            </select>
+                            <input type="text" id="jumlah_produksi" name='jumlah_produksi' class="form-control" required>
                         </div>
                         <div class="form-group" >
-                            <label for="nama">Tipe Granding:</label>
-                            <select name='tipe_granding' class="form-control" id="wb">
-                                <option>Batu</option>
-                                <option>Logam</option>
-                            </select>
                             <button type="submit" class="btn btn-primary">Simpan</button>
+                            <button type="submit" class="btn btn-warning">Cancel</button>
                         </div>
                     </form>
                 </div>

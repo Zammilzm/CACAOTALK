@@ -143,23 +143,23 @@
                             </div>
                             <div class="form-group">
                                 <label for="jk">Nama Buah:</label>
-                                <input type="text" id="nama_buah" name='nama_buah' class="form-control">
+                                <input type="text" id="nama_buah" name='nama_buah' class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label for="jk">Tanggal Tanam:</label>
-                                <input type="text" id="tanggal_tanam" name='tanggal_tanam' class="form-control">
+                                <input type="text" id="tanggal_tanam" name='tanggal_tanam' class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label for="jk">Tanggal Panen:</label>
-                                <input type="text" id="tanggal_panen" name='tanggal_panen' class="form-control">
+                                <input type="text" id="tanggal_panen" name='tanggal_panen' class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label for="email">Produktivitas:</label>
-                                <input type="text" class="form-control" id="produktivitas" name='produktivitas'><tt><p>(jumlah dalam satuan Kg)</p>
+                                <input type="text" class="form-control" id="produktivitas" name='produktivitas' required><tt><p>(jumlah dalam satuan Kg)</p>
                             </div>
                             <div class="form-group">
                                 <label for="email">Simpan Panen:</label>
-                                <input type="text" class="form-control" id="panen_simpan" name='panen_disimpan'>
+                                <input type="text" class="form-control" id="panen_simpan" name='panen_disimpan' required>
                             </div>
                             <button type="submit" class="btn btn-primary">Simpan</button>
                         </form>

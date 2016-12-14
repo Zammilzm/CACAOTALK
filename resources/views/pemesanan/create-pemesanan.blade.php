@@ -101,15 +101,15 @@
                             <hr class="cross-area">
                             <div class="form-group">
                                 <label for="jk">Nama Pemesan:</label>
-                                <input type="text" id="nama_pemesan" name='nama_pemesan' class="form-control">
+                                <input type="text" id="nama_pemesan" name='nama_pemesan' class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label for="nama">Alamat Pemesan:</label>
-                                <input type="text" id="alamat_pemesan" name='alamat_pemesan' class="form-control">
+                                <input type="text" id="alamat_pemesan" name='alamat_pemesan' class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label for="nama">Instansi Pemesan:</label>
-                                <input type="text" id="instansi_pemesan" name='instansi_pemesan' class="form-control">
+                                <input type="text" id="instansi_pemesan" name='instansi_pemesan' class="form-control" required>
                             </div>
                             <h4>Macam Pemesanan : </h4>
                             <div class="btn-group">           
@@ -128,15 +128,15 @@
 
                             <div class="form-group" id="bubuk_form">
                                 <label for="nama">Bubuk Coklat Dipesan:</label>
-                                <input type="text" id="bubuk_coklat_dipesan" name='bubuk_coklat_dipesan' class="form-control" >
+                                <input type="text" id="bubuk_coklat_dipesan" name='bubuk_coklat_dipesan' class="form-control" required>
                             </div>
                             <div class="form-group" id="permen_form">
                                 <label for="nama">Permen Coklat Dipesan:</label>
-                                <input type="text" id="permen_coklat_dipesan" name='permen_coklat_dipesan' class="form-control" >
+                                <input type="text" id="permen_coklat_dipesan" name='permen_coklat_dipesan' class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label for="nama">Status:</label>
-                                <input type="text" id="status" name='status' class="form-control" >
+                                <input type="text" id="status" name='status' class="form-control" readonly>
                             </div>
                             <button type="submit" class="btn btn-primary">Simpan</button>
                             <button type="submit" class="btn btn-warning">Cancel</button>

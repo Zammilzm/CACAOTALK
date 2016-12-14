@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cardio: Free One Page Template by Luka Cvetinovic</title>
+	<title>HOME</title>
 	<meta name="description" content="Cardio is a free one page template made exclusively for Codrops by Luka Cvetinovic" />
 	<meta name="keywords" content="html template, css, free, one page, gym, fitness, web design" />
 	<meta name="author" content="Luka Cvetinovic for Codrops" />
@@ -87,7 +87,7 @@
 				<form action="" class="popup-form">
 					<input type="text" class="form-control form-white" placeholder="Full Name">
 					<input type="password" class="form-control form-white" placeholder="PASSWORD">
-					<button type="submit" class="btn btn-submit">Submit</button>
+					<a href="/tabel" class="btn btn-primary">LOG IN</a>
 				</form>
 			</div>
 		</div>

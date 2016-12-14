@@ -140,7 +140,7 @@
                         </div>
                         <div class="form-group">
                             <label for="jk">Tanggal Penyerbukan:</label>
-                            <input type="date" name='tanggal_tanam' class="form-control">
+                            <input type="date" name='tanggal_tanam' class="form-control" required>
                         </div>
                         <div class="form-group" >
                             <label for="nama">Musim Tanam:</label>
@@ -151,11 +151,11 @@
                         </div>
                         <div class="form-group">
                             <label for="email">Pohon Dalam Penyerbukan (per:</label>
-                            <input type="text" class="form-control" name='jumlah_bibit'><tt><p>(jumlah dalam satuan biji)</p>
+                            <input type="text" class="form-control" name='jumlah_bibit' required><tt><p>(jumlah dalam satuan batang)</p>
                         </div>
                         <div class="form-group">
                             <label for="email">Luas Lahan:</label>
-                            <input type="text" class="form-control" name='luas_lahan'>
+                            <input type="text" class="form-control" name='luas_lahan' required>
                         </div>
                         <button type="submit" class="btn btn-primary">Simpan</button>
                     </form>

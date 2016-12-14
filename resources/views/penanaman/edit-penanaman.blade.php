@@ -132,11 +132,11 @@
                             <hr class="cross-area">
                             <div class="form-group">
                                 <label for="nama">Id Buah:</label>
-                                <input type="text" name='id_buah' value="{{$tanam->id_buah}}" class="form-control">
+                                <input type="text" name='id_buah' value="{{$tanam->id_buah}}" class="form-control" readonly>
                             </div>
                             <div class="form-group">
                                 <label for="jk">Tanggal Tanam:</label>
-                                <input type="text" name='tanggal_tanam' value="{{$tanam->tanggal_tanam}}" class="form-control">
+                                <input type="text" name='tanggal_tanam' value="{{$tanam->tanggal_tanam}}" class="form-control" required>
                             </div>
                             <div class="form-group" >
                                 <label for="nama">Musim Tanam:</label>
@@ -144,12 +144,12 @@
                                     <option {{($tanam->musim_tanam == 'Kemarau')?'selected':''}}  style="background-color:#AFA8A8;" >Kemarau</option>
                                     <option {{($tanam->musim_tanam == 'Hujan')?'selected':''}} style="background-color:#AFA8A8;">Hujan</option>
                                 </select>
-                                <div class="form-group">
+                                <div class="form-group" required>
                                     <label for="email">Jumlah Biji:</label>
                                     <input type="text" value="{{$tanam->jumlah_bibit}}" class="form-control" name='jumlah_bibit'>
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group" required>
                                 <label for="email">Luas Lahan:</label>
                                 <input type="text" class="form-control" value="{{$tanam->luas_lahan}}" name='luas_lahan'>
                             </div>

@@ -10,7 +10,7 @@ use App\Models\Hasilolahan;
 class PemesananController extends Controller
 {
     
-    public function create()
+    public function create()//form tabel create
     {
         $pemesanan = Pemesanan::all();
         $hasilolahan =Hasilolahan::all();
@@ -19,13 +19,13 @@ class PemesananController extends Controller
 
     }
 
-    public function show()//
+    public function show()//tabel pemesanan
     {
         $pemesanan =Pemesanan::all();
         return view('pemesanan.tabel-pemesanan',compact('pemesanan'));
 
     }
-    public function showValidasi()//
+    public function showValidasi()// untuk tabel validasi admin
     {
         $pemesanan =Pemesanan::all();
         return view('pemesanan.view-validasi',compact('pemesanan'));
@@ -38,14 +38,14 @@ class PemesananController extends Controller
         return redirect('/pemesanan/create');
     }
 
-    public function validasi($id)
+    public function validasi($id)//merubah status validasi
     {
         $pemesanan = Pemesanan::find($id);
         $pemesanan->status = 'tervalidasi';
         $pemesanan->save();
         return redirect('/validasiPemesanan');
     }
-    public function edit($id)
+    public function edit($id)//menampilkan form edit
     {
         $pemesanan = Pemesanan::find($id);
         $hasilolahan =Hasilolahan::all();
