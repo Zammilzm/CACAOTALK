@@ -29,17 +29,18 @@ class TanamController extends Controller
         if ($buah->jenis_kakao == 'Mulia') {
             if ($request->musim_tanam == 'Kemarau') {
                 //return 'a '.$tgl->a,mddMonths(6);
-                if($jarakTanam>=9){
-                    $panen = [
-                    'id_tanam' => $tanam->id_tanam,
-                    'tanggal_panen' => $tgl->addMonths(5)->addDays(20),
-                    'produktivitas' => ($tanam->jumlah_bibit * 5)+($tanam->jumlah_bibit * 5 * 0.4)
-                    ];
-                }else if($jarakTanam<=9){ 
+                if($jarakTanam<=9){
                     $panen = [
                     'id_tanam' => $tanam->id_tanam,
                     'tanggal_panen' => $tgl->addMonths(5)->addDays(5),
                     'produktivitas' => ($tanam->jumlah_bibit * 5)+($tanam->jumlah_bibit * 5 *0.4)-($tanam->jumlah_bibit * 5 * 0.05)
+                    ];
+                }else if($jarakTanam>=9){ 
+                    
+                    $panen = [
+                    'id_tanam' => $tanam->id_tanam,
+                    'tanggal_panen' => $tgl->addMonths(5)->addDays(20),
+                    'produktivitas' => ($tanam->jumlah_bibit * 5)+($tanam->jumlah_bibit * 5 * 0.4)
                     ];
                 }
                 
